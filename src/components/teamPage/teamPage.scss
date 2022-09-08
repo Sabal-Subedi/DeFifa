@@ -1,0 +1,104 @@
+.splash-container {
+  //   border: 1px solid red;
+  background-color: var(--background-color);
+  //   height: 100vh;
+
+  .sec-dataTable {
+    border: 1px solid #e1e2e3;
+    padding: 10px 15px;
+    height: 72vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 100;
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .splash-header {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--player-name);
+      -moz-box-shadow: 0 0 5px #888;
+      -webkit-box-shadow: 0 0 5px#888;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+      padding: 3px 15px;
+      position: sticky;
+      // height: 50px;
+      z-index: 200;
+    }
+    .spiner-container {
+      position: relative;
+      height: 67vh;
+      .spiner {
+        position: relative;
+        top: 30%;
+      }
+    }
+    .rdt_TableCol {
+      /* border: 1px solid red; */
+      padding: 12px !important;
+      font-size: 14px !important;
+      font-weight: bolder;
+      /* justify-content: center; */
+      // background-color: #fafbfc !important;
+      color: #212529 !important;
+    }
+
+    .sc-dmRaPn.nauIv {
+      overflow: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none; /* Firefox */
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .rdt_TableCell {
+      /* border: 1px solid black; */
+      font-size: 13px !important;
+      padding: 12px !important;
+      /* justify-content: center; */
+      color: #212529;
+    }
+
+    .sc-evZas.eUeqdG {
+      color: red;
+    }
+    .datatable-container {
+      padding: 5px;
+    }
+  }
+  .player-details {
+    width: 100%;
+    display: flex;
+    .player-no {
+      height: 70px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 900;
+      background-color: rgb(216, 73, 101);
+      color: #e1e2e3;
+    }
+    .player-two {
+      margin-left: 5px;
+      font-weight: 600;
+      .player-name {
+        font-size: 14px;
+      }
+      .player-position,
+      .player-club,
+      .player-nationality {
+        color: #0055c5;
+        font-size: 12px;
+      }
+    }
+  }
+}

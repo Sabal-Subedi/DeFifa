@@ -1,0 +1,83 @@
+$nav-text: white;
+$light: white;
+$dark: black;
+
+.navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 5000;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  // padding: 10px;
+  background-color: var(--main-color);
+  .nav-left {
+    display: flex;
+    color: $nav-text;
+    font-size: 15px;
+    font-weight: 800;
+    .nav-logo {
+      // border: 1px solid green;
+      height: 50px;
+      padding: 5px 8px;
+      width: 10em;
+      cursor: pointer;
+      .actual-logo {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .navLink {
+      // margin-left: 15px;
+      padding: 15px 8px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: darkgray;
+        text-decoration: underline;
+      }
+    }
+    .active {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+  .nav-right {
+    padding: 11px 0;
+    cursor: pointer;
+    .light-theme {
+      color: white;
+      &:hover {
+        color: blue;
+      }
+    }
+    .dark-theme {
+      color: black;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
+
+.footer-container {
+  background-color: var(--background-color);
+  color: var(--player-name);
+  // border: 1px solid red;
+  width: 100%;
+  position: sticky;
+  z-index: 100;
+  bottom: 0;
+  padding: 25px 0px;
+  .footer-copyright {
+    font-size: 12px;
+    font-style: italic;
+  }
+  .footer-content {
+    font-size: 14px;
+    padding: 3px;
+  }
+}
