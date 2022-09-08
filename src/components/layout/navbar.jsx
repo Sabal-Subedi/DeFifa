@@ -11,10 +11,10 @@ export default function Navbar({ theme, setTheme }) {
         <div className="nav-logo">
           <img src={fifaLogo} alt="FIFA22" className="actual-logo" />
         </div>
-        <NavLink className="navLink" to="/">
+        <NavLink activeClassName="active" className="navLink" to="/">
           PLAYERS
         </NavLink>
-        <NavLink className="navLink" to="/">
+        <NavLink activeClassName="active" className="navLink" to="/teams">
           TEAMS
         </NavLink>
       </div>

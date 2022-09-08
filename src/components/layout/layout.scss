@@ -39,10 +39,10 @@ $dark: black;
         color: darkgray;
         text-decoration: underline;
       }
-      &:active {
-        color: black;
-        text-decoration: underline;
-      }
+    }
+    .active {
+      color: black;
+      text-decoration: underline;
     }
   }
   .nav-right {

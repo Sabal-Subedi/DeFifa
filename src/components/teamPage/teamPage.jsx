@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import { Fetchdata } from "../../hooks/getData";
-import { TopPlayers } from "../dummyData/dummyList";
-import PlayerDetails from "./playerDetails";
-import "./splashPage.scss";
+import { TopPlayers } from "../dummyData/dummyPlayerList";
+import TeamDetails from "./teamDetails";
+import "./teamPage.scss";
 
-export default function SplashPage() {
+export default function TeamPage() {
   const [loading, setLoading] = useState(true);
-  const [playerList, setPlayerList] = useState([]);
-  const [selectedPlayer, setSelectedPlayer] = useState([]);
+  const [teamList, setTeamList] = useState([]);
+  const [selectedTeam, setSelectedTeam] = useState([]);
   const [showDetails, setShowDetails] = useState(false);
 
   const columns = [
@@ -78,23 +78,23 @@ export default function SplashPage() {
         if (result.status === "OK") {
           console.log("Post Result =>", result);
           const postResult = result.playersList ? result.playersList : "";
-          setPlayerList(postResult);
+          setTeamList(postResult);
           setLoading(false);
         } else {
-          setPlayerList(TopPlayers);
+          setTeamList(TopPlayers);
           console.log("Fetch error!");
           setLoading(false);
         }
       })
       .catch((err) => {
-        setPlayerList(TopPlayers);
+        setTeamList(TopPlayers);
         setLoading(false);
       });
   }, []);
 
   const handleRowClick = (row) => {
     console.log(row);
-    setSelectedPlayer(row);
+    setSelectedTeam(row);
     setShowDetails(true);
   };
 
@@ -102,7 +102,7 @@ export default function SplashPage() {
     <>
       <div className="splash-container ps-3 pe-3 pt-3">
         <div className="sec-dataTable">
-          <div className="splash-header">Players</div>
+          <div className="splash-header">Teams</div>
           {loading ? (
             <div className="spiner-container">
               <div class="d-flex justify-content-center spiner">
@@ -121,7 +121,7 @@ export default function SplashPage() {
             <div className="datatable-container ps-2 pe-2">
               <DataTable
                 columns={columns}
-                data={playerList}
+                data={teamList}
                 pagination
                 fixedHeader
                 fixedHeaderScrollHeight="365px"
@@ -136,11 +136,8 @@ export default function SplashPage() {
           )}
         </div>
       </div>
-      {showDetails && selectedPlayer && (
-        <PlayerDetails
-          setShowDetails={setShowDetails}
-          player={selectedPlayer}
-        />
+      {showDetails && selectedTeam && (
+        <TeamDetails setShowDetails={setShowDetails} player={selectedTeam} />
       )}
     </>
   );

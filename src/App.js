@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/layout/footer";
 import Navbar from "./components/layout/navbar";
-import SplashPage from "./components/splashPage/splashPage";
+import PlayerPage from "./components/playerPage/playerPage";
+import TeamPage from "./components/teamPage/teamPage";
 
 function App() {
   const [theme, setTheme] = useState(true);
@@ -21,7 +23,10 @@ function App() {
     <>
       <div className="app-container">
         <Navbar theme={theme} setTheme={setTheme} />
-        <SplashPage />
+        <Routes>
+          <Route path="/" element={<PlayerPage />} />
+          <Route path="/teams" element={<TeamPage />} />
+        </Routes>
         <Footer />
       </div>
     </>
