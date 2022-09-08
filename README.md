@@ -57,6 +57,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
+### About Project
 
 Every football fans are familiar with FIFA22, an EA Sports game that attempt to mimic real world football in digital gaming.
 DeFIFA is an informative online web application to review player details included in FIFA22.
