@@ -1,0 +1,396 @@
+.pd-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5500;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  overflow: hidden !important;
+  // border: 1px solid red;
+
+  .pd-inner {
+    background-color: white;
+    /* max-width: 950px; */
+    width: 90%;
+    height: 90vh;
+    top: 5vh;
+    left: 5%;
+    position: absolute;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    .pd-header {
+      display: flex;
+      justify-content: space-between;
+      // border: 1px solid red;
+      align-items: center;
+      padding: 5px 15px;
+      // background-color: rgb(185, 185, 184);
+      background-image: linear-gradient(
+        140deg,
+        #eadedb 40%,
+        #bfd641 30%,
+        #bc70a4 75%
+      );
+
+      box-shadow: 10px 4px #bfd641;
+
+      .pd-title {
+        // border: 1px solid red;
+        width: 70%;
+        height: 50px;
+        position: relative;
+        display: flex;
+
+        .ultimate-logo {
+          height: 100%;
+          // border: 1px solid blue;
+
+          .actual-ultimate {
+            height: 100%;
+            width: 50px;
+            color: white;
+          }
+        }
+
+        .ultimate-title {
+          display: flex;
+          align-items: center;
+          font-size: 40px;
+          font-weight: 900;
+          margin-left: 5px;
+          color: #bc70a4;
+
+          @media screen and (max-width: 630px) {
+            font-size: 30px !important;
+          }
+          @media screen and (max-width: 500px) {
+            font-size: 22px !important;
+          }
+          @media screen and (max-width: 400px) {
+            font-size: 20px !important;
+          }
+        }
+      }
+      .pd-closebtn {
+        color: #eadedb;
+      }
+    }
+
+    .pd-content {
+      // border: 1px solid red;
+
+      .pd-body {
+        // border: 1px solid green;
+        height: 76vh;
+        overflow-y: scroll;
+        padding-bottom: 5px;
+
+        .pd-left {
+          // border: 1px solid red;
+          position: relative;
+          padding: 0;
+          height: 155vh;
+          .pd-card {
+            // border: 1px solid blue;
+            position: absolute;
+            width: 100%;
+            height: 500px;
+
+            .actual-card {
+              // border: 1px solid red;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+            }
+            .card-data {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              // border: 1px solid blueviolet;
+
+              .card-left {
+                // border: 1px solid red;
+                position: absolute;
+                top: 90px;
+                left: 17%;
+                width: 10%;
+
+                .ovr {
+                  font-size: 28px;
+                  font-weight: 900;
+                  display: flex;
+                  justify-content: center;
+                  color: rgb(219, 88, 114);
+                }
+
+                .pos {
+                  display: flex;
+                  justify-content: center;
+                  font-size: 14px;
+                  font-weight: 700;
+                }
+
+                .under-line {
+                  margin-top: 5px !important;
+                  height: 3px;
+                }
+              }
+
+              .card-right {
+                // border: 1px solid blue;
+                position: absolute;
+                top: 90px;
+                left: 30%;
+                width: 53%;
+                height: 200px;
+
+                .pd-kit {
+                  width: 100%;
+                  height: 100%;
+                  // border: 1px solid red;
+                  position: relative;
+                  margin: 0px !important;
+                }
+
+                .actual-kit {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+
+                  .number {
+                    position: absolute;
+                    top: 30%;
+                    left: 45%;
+                    font-size: 20px;
+                    font-weight: 800;
+                    color: rgb(187, 187, 187);
+                  }
+                }
+              }
+
+              .pname {
+                position: absolute;
+                top: 295px;
+                width: 100%;
+                font-size: 20px;
+                font-weight: 800;
+                display: flex;
+                justify-content: center;
+              }
+
+              .properties {
+                position: absolute;
+                // border: 1px solid red;
+                width: 86%;
+                top: 330px;
+                left: 19%;
+              }
+            }
+          }
+
+          .radar-chart {
+            // border: 1px solid red;
+            position: relative;
+
+            .actual-radar {
+              position: absolute;
+              // border: 1px solid blue;
+              top: 500px;
+              height: 250px;
+              width: 100%;
+            }
+
+            .apexcharts-toolbar {
+              display: none !important;
+            }
+          }
+        }
+        .pd-right {
+          // border: 1px solid red;
+          position: relative;
+          height: 155vh;
+
+          .pd-info {
+            // border: 1px solid red;
+
+            .pd-avatar {
+              // border: 1px solid blue;
+              height: 150px;
+
+              .actual-avatar {
+                width: 100%;
+                height: 100%;
+                background-color: #eadedb;
+              }
+            }
+
+            .avatar-details {
+              display: flex;
+              flex-direction: column;
+
+              .avatar-name {
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 60px;
+              }
+              .avatar-newrow {
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+                .avatar-pos,
+                .avatar-age,
+                .avatar-body {
+                  color: rgb(219, 88, 114);
+                  padding-right: 8px;
+                }
+                .avatar-age,
+                .avatar-body {
+                  font-size: 12px !important;
+                  display: flex;
+                  align-items: center;
+                  color: black !important;
+                }
+              }
+
+              .avatar-feet {
+                height: 35px;
+                position: relative;
+                .actual-feet {
+                  height: 35px;
+                  padding: 3px 3px;
+                }
+                .trueFeet {
+                  height: 35px;
+                  padding: 3px 3px;
+                  background-color: rgb(219, 88, 114);
+                }
+              }
+            }
+          }
+          .avatar-property {
+            // border: 1px solid red;
+            margin-top: 10px;
+            padding: 5px 0px;
+            background: #f1f3f566;
+
+            .col {
+              margin-left: 10px;
+              padding: 5px;
+              .prop-one {
+                font-size: 14px;
+                .ovr {
+                  font-weight: 700;
+                  background-color: rgb(219, 88, 114);
+                  padding: 5px;
+                  color: white;
+                }
+              }
+              .prop-two {
+                font-size: 14px;
+                padding: 5px 0px;
+                color: #868e96;
+              }
+            }
+          }
+          .avatar-spec {
+            margin-top: 5px;
+            padding: 5px 0px;
+
+            .col {
+              margin-left: 10px;
+              padding: 5px;
+
+              .spec-head {
+                font-weight: 700;
+                margin-bottom: 5px;
+              }
+
+              .spec-body {
+                font-size: 14px;
+
+                .body-content {
+                  display: flex;
+
+                  .sub-head {
+                    color: #868e96;
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+          }
+          .avatar-stat {
+            margin-top: 5px;
+            padding: 5px 0px;
+
+            .col {
+              margin-left: 10px;
+              padding: 5px;
+
+              .spec-head {
+                font-weight: 700;
+                margin-bottom: 5px;
+              }
+
+              .spec-body {
+                font-size: 14px;
+                // border: 1px solid red;
+
+                .body-content {
+                  display: flex;
+                  margin: 3px 0px;
+
+                  .red-box,
+                  .orange-box,
+                  .yellow-box,
+                  .green-box,
+                  .darkgreen-box {
+                    color: #fff;
+                    background: #66a80f !important;
+                    padding: 1px 3px;
+                    width: 22px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+
+                  .red-box {
+                    background: #c92a2a !important;
+                  }
+                  .orange-box {
+                    background: #d95c0f !important;
+                  }
+                  .yellow-box {
+                    background: #e6b600 !important;
+                  }
+                  .green-box {
+                    background: #66a80f !important;
+                  }
+
+                  .darkgreen-box {
+                    background: #0c8539 !important;
+                  }
+
+                  .sub-head {
+                    color: #868e96;
+                    margin-left: 5px;
+                  }
+                }
+              }
+              .bar-chart {
+                // border: 1px solid red;
+                .apexcharts-toolbar {
+                  display: none !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

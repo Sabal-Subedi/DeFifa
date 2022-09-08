@@ -1,5 +1,5 @@
 .splash-container {
-  border: 1px solid red;
+  //   border: 1px solid red;
   background-color: var(--background-color);
   //   height: 100vh;
 
@@ -71,6 +71,34 @@
     }
     .datatable-container {
       padding: 5px;
+    }
+  }
+  .player-details {
+    width: 100%;
+    display: flex;
+    .player-no {
+      height: 70px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 900;
+      background-color: rgb(216, 73, 101);
+      color: #e1e2e3;
+    }
+    .player-two {
+      margin-left: 5px;
+      font-weight: 600;
+      .player-name {
+        font-size: 14px;
+      }
+      .player-position,
+      .player-club,
+      .player-nationality {
+        color: #0055c5;
+        font-size: 12px;
+      }
     }
   }
 }
