@@ -1,0 +1,163 @@
+.td-container {
+  //   border: 1px solid red;
+  background-color: var(--background-color);
+  //   height: 100vh;
+
+  .sec-dataTable {
+    border: 1px solid #e1e2e3;
+    padding: 10px 15px;
+    height: 72vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 100;
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .td-header {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--player-name);
+      -moz-box-shadow: 0 0 5px #888;
+      -webkit-box-shadow: 0 0 5px#888;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+      padding: 3px 15px;
+      position: sticky;
+      // height: 50px;
+      z-index: 200;
+    }
+    .spiner-container {
+      position: relative;
+      height: 67vh;
+      .spiner {
+        position: relative;
+        top: 30%;
+      }
+    }
+    .td-content {
+      padding: 5px;
+      // border: 1px solid red;
+      height: 64vh;
+      position: relative;
+      overflow-y: scroll;
+
+      .pitch-logo {
+        position: relative;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+      }
+
+      .squad-lineUp {
+        position: absolute;
+        // border: 1px solid red;
+        height: fit-content;
+        width: 99%;
+
+        .front-line,
+        .second-line,
+        .third-line,
+        .forth-line {
+          // border: 2px solid yellowgreen;
+          position: absolute;
+          width: 100%;
+          display: flex;
+          flex-direction: center;
+
+          .pos-lw,
+          .pos-st,
+          .pos-rw,
+          .pos-lm,
+          .pos-cdm,
+          .pos-rm,
+          .pos-lb,
+          .pos-lcb,
+          .pos-rcb,
+          .pos-rb,
+          .pos-gk {
+            position: absolute;
+            // border: 1px solid red;
+            top: 10px;
+            padding: 0px !important;
+
+            .player-img {
+              // border: 1px solid red;
+              width: 100%;
+              height: 60px;
+              display: flex;
+              justify-content: center;
+
+              .actual-player {
+                width: 60px;
+                height: 100%;
+              }
+            }
+            .player-info {
+              display: flex;
+              // justify-content: center;
+              align-items: center;
+              // border: 1px solid red;
+              background: rgba(0, 0, 0, 0.75);
+              font-size: 13px;
+              font-weight: 700;
+              color: #e1e2e3;
+
+              .player-stats {
+                background-color: rgb(216, 73, 101);
+                padding: 2px 5px;
+              }
+
+              .player-name {
+                padding: 2px 5px;
+              }
+            }
+          }
+          .pos-lw {
+            top: 30px !important;
+            // left: 27% !important;
+          }
+          .pos-rw {
+            top: 30px !important;
+            // left: 67% !important;
+          }
+          .pos-lm {
+            top: 120px !important;
+            // left: 27% !important;
+          }
+          .pos-rm {
+            top: 120px !important;
+            // left: 67% !important;
+          }
+          .pos-cdm {
+            top: 180px !important;
+            // left: 67% !important;
+          }
+          .pos-lb {
+            top: 220px !important;
+            // left: 67% !important;
+          }
+          .pos-lcb {
+            top: 280px !important;
+            // left: 27% !important;
+          }
+          .pos-rcb {
+            top: 280px !important;
+            // left: 67% !important;
+          }
+          .pos-rb {
+            top: 220px !important;
+            // left: 67% !important;
+          }
+          .pos-gk {
+            top: 420px !important;
+            // left: 67% !important;
+          }
+        }
+      }
+    }
+  }
+}

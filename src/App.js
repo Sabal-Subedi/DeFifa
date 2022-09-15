@@ -4,6 +4,7 @@ import "./App.css";
 import Footer from "./components/layout/footer";
 import Navbar from "./components/layout/navbar";
 import PlayerPage from "./components/playerPage/playerPage";
+import TeamDetails from "./components/teamPage/teamDetails";
 import TeamPage from "./components/teamPage/teamPage";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<PlayerPage />} />
           <Route path="/teams" element={<TeamPage />} />
+          <Route path="/squad" element={<TeamDetails />} />
         </Routes>
         <Footer />
       </div>
