@@ -140,7 +140,7 @@ export default function TeamDetails() {
                       </div>
                     </div>
 
-                    <div className="pos-lcb me-md-5 col-md-2 offset-md-4 col-sm-3 offset-sm-3 col-3 offset-3">
+                    <div className="pos-lcb col-md-2 offset-md-4 col-sm-3 offset-sm-3 col-3 offset-3">
                       <div className="player-img">
                         <img
                           src={Player}
