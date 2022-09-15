@@ -150,7 +150,7 @@ export default function TeamDetails() {
                       </div>
                       <div className="player-info">
                         <div className="player-stats">80</div>
-                        <div className="player-name">Left Center</div>
+                        <div className="player-name">Left Center Back</div>
                       </div>
                     </div>
                     <div className="pos-rcb col-md-2 offset-md-6 col-sm-3 offset-sm-6 col-3 offset-6">
@@ -163,7 +163,7 @@ export default function TeamDetails() {
                       </div>
                       <div className="player-info">
                         <div className="player-stats">80</div>
-                        <div className="player-name">Right Center</div>
+                        <div className="player-name">Right Center Back</div>
                       </div>
                     </div>
                     <div className="pos-rb col-md-2 offset-md-9 col-sm-3 offset-sm-9 col-3 offset-9">
