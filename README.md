@@ -1,7 +1,6 @@
 # ⚽ DeFifa🏆  
 
-### Unleash the Power of FIFA Stats with AI!
-DeFifa is an interactive FIFA22 player analysis platform that lets users search, filter, and visualize player statistics with a seamless and intuitive UI. Whether you're scouting top players or analyzing performance trends, DeFifa brings **real-time insights right at your fingertips!  
+DeFifa is an interactive FIFA22 player analysis platform that lets users search, filter, and visualize player statistics with a seamless and intuitive UI. Whether you're scouting top players or analyzing performance trends, DeFifa brings real-time insights right at your fingertips!  
 
 ## 🎯 Key Features
 ✅ Intelligent Player Search – Instantly find players by name.  
@@ -27,4 +26,4 @@ DeFifa is an interactive FIFA22 player analysis platform that lets users search,
 Follow these steps to set up DeFifa on your local machine.  
 
 ### 📌 Installation 
-1️⃣ Clone the repository [Click here](git clone https://github.com/Sabal-Subedi/DeFifa.git)
+1️⃣ Clone the repository [Click here](https://github.com/Sabal-Subedi/DeFifa.git)
