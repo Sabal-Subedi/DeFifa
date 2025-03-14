@@ -26,4 +26,9 @@ DeFifa is an interactive FIFA22 player analysis platform that lets users search,
 Follow these steps to set up DeFifa on your local machine.  
 
 ### 📌 Installation 
-1️⃣ Clone the repository [Click here](https://github.com/Sabal-Subedi/DeFifa.git)
+- 1️⃣ Clone the repository [Click here](https://github.com/Sabal-Subedi/DeFifa.git)
+- 2️⃣ Navigate to the project directory
+- 3️⃣ Install dependencies
+  - npm install
+- 4️⃣ Run the development server
+- 5️⃣ Open the app in your browser [Click here](ttp://localhost:3000)
