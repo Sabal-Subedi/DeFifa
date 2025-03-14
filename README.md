@@ -31,4 +31,4 @@ Follow these steps to set up DeFifa on your local machine.
 - 3️⃣ Install dependencies
   - npm install
 - 4️⃣ Run the development server
-- 5️⃣ Open the app in your browser [Click here](ttp://localhost:3000)
+- 5️⃣ Open the app in your browser [Click here](http://localhost:3000)
